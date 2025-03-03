@@ -52,11 +52,11 @@ const Newsapp = () => {
             <p className='head'>Updated News</p>
         </div>
         <div className="categoryBtn">
-            <button onClick={userInput} value="sports"><MdOutlineSportsKabaddi style={{height: "15px"}} />Sports</button>
-            <button onClick={userInput} value="politics"><PiPoliceCarFill style={{height: "15px"}} />Politics</button>
-            <button onClick={userInput} value="entertainment"><FaRegFaceLaughWink style={{height: "15px"}} />Entertainment</button>
-            <button onClick={userInput} value="health"><MdOutlineHealthAndSafety style={{height: "15px"}} />Health</button>
-            <button onClick={userInput} value="fitness"><IoMdFitness style={{height: "15px"}} />Fitness</button>
+            <button onClick={userInput} value="sports"><MdOutlineSportsKabaddi style={{height: "15px",color: "black"}} />Sports</button>
+            <button onClick={userInput} value="politics"><PiPoliceCarFill style={{height: "15px", color: "black"}} />Politics</button>
+            <button onClick={userInput} value="entertainment"><FaRegFaceLaughWink style={{height: "15px", color: "black"}} />Entertainment</button>
+            <button onClick={userInput} value="health"><MdOutlineHealthAndSafety style={{height: "15px", color: "black"}} />Health</button>
+            <button onClick={userInput} value="fitness"><IoMdFitness style={{height: "15px", color: "black"}} />Fitness</button>
         </div>
         <div>
            {newsData? <Card data={newsData}/> : null}
