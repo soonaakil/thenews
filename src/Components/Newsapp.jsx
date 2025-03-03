@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import Card from './Card'
 import { MdOutlineSportsKabaddi } from "react-icons/md";
+import { PiPoliceCarFill } from "react-icons/pi";
+import { BiSolidCameraMovie } from "react-icons/bi";
+import { MdOutlineHealthAndSafety } from "react-icons/md";
+import { IoMdFitness } from "react-icons/io";
+import { FaRegFaceLaughWink } from "react-icons/fa6";
 
 const Newsapp = () => {
     const [search, setSearch] = useState("india");
@@ -47,11 +52,11 @@ const Newsapp = () => {
             <p className='head'>Updated News</p>
         </div>
         <div className="categoryBtn">
-            <button onClick={userInput} value="sports"><MdOutlineSportsKabaddi />Sports</button>
-            <button onClick={userInput} value="politics">Politics</button>
-            <button onClick={userInput} value="entertainment">Entertainment</button>
-            <button onClick={userInput} value="health">Health</button>
-            <button onClick={userInput} value="fitness">Fitness</button>
+            <button onClick={userInput} value="sports"><MdOutlineSportsKabaddi style={{height: "15px"}} />Sports</button>
+            <button onClick={userInput} value="politics"><PiPoliceCarFill style={{height: "15px"}} />Politics</button>
+            <button onClick={userInput} value="entertainment"><FaRegFaceLaughWink style={{height: "15px"}} />Entertainment</button>
+            <button onClick={userInput} value="health"><MdOutlineHealthAndSafety style={{height: "15px"}} />Health</button>
+            <button onClick={userInput} value="fitness"><IoMdFitness style={{height: "15px"}} />Fitness</button>
         </div>
         <div>
            {newsData? <Card data={newsData}/> : null}
