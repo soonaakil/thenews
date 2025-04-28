@@ -11,7 +11,7 @@ const Newsapp = () => {
     const [search, setSearch] = useState("india");
     const [newsData, setNewsData] = useState(null);
 
-    const API_KEYS = "3e77013c14d84db908yer6c0ab3af310";
+    const API_KEYS = "3e77013c14d84ko615yer6c0vg3af310";
 
     const getData = async() =>{
         const response = await fetch(`https://newsapi.org/v2/everything?q=${search}&apiKey=${API_KEYS}`);
